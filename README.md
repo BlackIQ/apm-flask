@@ -2,7 +2,7 @@
 
 Flask sample project is just a sample project and here is what I usualy do for each new Flask project.
 
-### What is APN?
+### What is APM?
 
 **APM** stands for,
 
