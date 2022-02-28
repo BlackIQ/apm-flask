@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="60">
+    <title>صفحه اصلی</title>
+    <script src="https://kit.fontawesome.com/4a679d8ec0.js" crossorigin="anonymous"></script>
+    <link href="static/css/mdb.min.css" type="text/css" rel="stylesheet">
+    <link href="static/sass/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="static/js/clipboard.min.js"></script>
+<script type="text/javascript" src="static/js/chart.min.js"></script>
+<script type="text/javascript" src="static/js/googlecharts.js"></script>
+<script type="text/javascript" src="static/js/jquery.toast.min.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
+<script type="text/javascript" src="static/js/mdb.min.js"></script>
+
+<div class="modal fade persian" id="uploading" data-mdb-backdrop="static" data-mdb-keyboard="false" aria-labelledby="staticBackdropLabel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-primary">آپلود فایل جدید</h5>
+                <i class="fa fa-times float-end close-modal pointer" data-mdb-dismiss="modal"></i>
+            </div>
+            <div class="modal-body">
+                <p>برای آپلود فایل جدید باید فایل خود را انتخاب کنید و سپس روی دکمه آپلود کلیک کنید.</p>
+                <br>
+                <form method="POST" enctype="multipart/form-data">
+                    <input class="form-control" placeholder="فایل را انتخاب کنید" type="file" name="file">
+                    <br>
+                    <button type="submit" class="btn btn-primary" value="upload">آپلود</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

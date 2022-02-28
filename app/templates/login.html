@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ورود به برنامه</title>
+    <script src="https://kit.fontawesome.com/4a679d8ec0.js" crossorigin="anonymous"></script>
+    <link href="static/css/mdb.min.css" type="text/css" rel="stylesheet">
+    <link href="static/sass/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid persian login">
+    <div class="row">
+        <div class="col-md-6 login-box">
+            <div class="m-1">
+                <h1 class="text-primary">ورود به اپلیکیشن</h1>
+                <br>
+                <form method="post" action="/login">
+                    {{ form.csrf_token }}
+                    <label for="id" class="form-label text-primary">آیدی</label>
+                    {{ form.id(placeholder = 'آیدی', class = 'form-control border border-primary text-primary', id = 'id') }}
+                    <br>
+                    <label for="pass" class="form-label text-primary">رمز عبور</label>
+                    {{ form.password(placeholder = 'رمز عبور', class = 'form-control border border-primary text-primary', id = 'pass') }}
+                    <br>
+                    <button class="btn btn-primary" type="submit" value="login">ورود</button>
+                </form>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <br>
+                        <ul class="flashes">
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
+<script type="text/javascript" src="static/js/mdb.min.js"></script>
+</body>
+</html>
