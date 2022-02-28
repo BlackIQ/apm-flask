@@ -1,6 +1,6 @@
-# Flask (APM)
+# APM Flask package
 
-Flask sample project is just a sample project and here is what I usualy do for each new Flask project.
+Flask sample projectis just a sample project and here is what I usualy do for each new FLask project.
 
 ### What is APM?
 
